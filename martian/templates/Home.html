@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+  </head>
+  <body>
+     <header class="header">
+       <li class="logo"><a href="{% url "home_view" %}">TNS</a></li>
+       <ul>
+         <li><a href="{% url "home_view" %}">Home</a></li>
+         <li><a href="{% url "form_view" %}">Bookings</a></li>
+         <li><a href="{% url "explore_view" %}">Explore</a></li>
+         <li><a href="{% url "about_view" %}">About-Us</a></li>
+       </ul>
+     </header>
+     <div class="content">
+
+
+    <div class="Title">
+      <h1>Join us to step into the parts of alien civilization to experience</br>
+         the inner layout of creater's mind</h1>
+      <h2>We assure your security, safety and sustainability as our personal liability</h2>
+      <button><a href={% url "explore_view"%}>Explore More</a></button>
+    </div>
+    </div>
+
+  
+
+  </body

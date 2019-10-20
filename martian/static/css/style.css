@@ -1,0 +1,113 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+
+body{
+  background-image: url(/static/images/chulo.jpg);
+  color:#a8d5b7;
+
+
+}
+
+
+
+
+
+
+.header{
+  height: 20vh;
+  border: 1px solid black;
+  background:#1A1A1D;
+
+
+}
+
+.header ul{
+  float:right;
+  padding: 20px;
+  margin-right: 5%;
+  word-spacing: 20px;
+}
+
+.header ul li{
+  display: inline-block;
+}
+
+.header .logo{
+  float:left;
+  margin-right:13%;
+  margin-top:10px;
+
+}
+
+.header .logo a{
+  text-decoration: none;
+  display: inline-block;
+  color:#e5e5e5;
+  font-size:30px;
+  font-style: sans-serif;
+  font-weight:900;
+  padding:10px;
+  letter-spacing: 0.3em;
+  margin-left:13%;
+}
+
+.header ul li a{
+  text-decoration: none;
+  padding: 8px;
+  letter-spacing: 0.1em;
+  font-weight:500;
+  color:#e5e5e5;
+  font-family: sans-serif;
+  transition: 0.6s ease;
+
+}
+
+.header ul li a:hover{
+  background-color: #fff;
+  color:black;
+}
+
+.Title{
+  text-align: center;
+  font-family: fantasy;
+  padding-top: 40px;
+  line-height: 45px;
+
+
+}
+
+.Title h1{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  word-spacing: 0.1em;
+}
+
+.Title h2{
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  word-spacing: 0.09em;
+  padding-top: 40px;
+}
+
+.Title button{
+  margin-top: 20px;
+  font-size: 35px;
+  border-bottom none;
+
+}
+
+.Title button a{
+  text-decoration: none;
+  color:green;
+  font-family:serif;
+}
+
+.Title button:hover{
+  background: #e5e5e5;
+  color:green;
+}

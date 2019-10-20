@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>    <link rel="stylesheet" type="text/css" href="{% static 'css/bookings.css' %}"/>
+  <div class='topping'>
+</div>
+  <body>
+    <header class ="header">
+
+      <li class="logo"><a href="{% url "home_view" %}">TNS</a></li>
+      <ul>
+        <li><a href="{% url "home_view" %}">Home</a></li>
+        <li><a href="{% url "form_view" %}">Bookings</a></li>
+        <li><a href="{% url "explore_view" %}">Explore</a></li>
+        <li><a href="{% url "about_view" %}">About-Us</a></li>
+      </ul>
+
+
+    </header>
+
+
+    <div class="fom" >
+    <form method="POST">
+      {% csrf_token %}
+
+
+      Name</br>   {{ form.Name }}</br>
+      Age </br>  {{ form.Age }}</br>
+      Country</br> {{form.Country }}</br></br>
+      Email </br>  {{ form.Email }}</br>
+      Destination</br> </br> {{ form.Destination }}</br>
+      Purpose</br>  {{ form.Purpose }}</br>
+
+
+      <button type="submit" class='button'>Register</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class ="contacts">
+      <h1> TNS HEADQUARTERS </h1>
+      <h2> Shankamul Road </h2>
+      <h3> New Baneshwor, Kathmandu </br>
+      Toll-free : 393-585-333-869</h3>
+    </div>
+    <div class="line">
+
+    </div>
+    <div class="address">
+      <h1>Enquiry Address: enquiry@tns.com</h1>
+    </div>
+  </div>
+
+  </body>
+</html>

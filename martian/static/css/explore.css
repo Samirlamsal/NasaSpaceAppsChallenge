@@ -1,0 +1,342 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+html, .Body{
+  height:100%;
+  background:black;
+}
+
+
+.header{
+  height: 20vh;
+  border: 1px solid black;
+  background:#1A1A1D;
+
+}
+
+.header ul{
+  float:right;
+  padding: 20px;
+  margin-right: 5%;
+  word-spacing: 20px;
+}
+
+.header ul li{
+  display: inline-block;
+}
+
+.header .logo{
+  float:left;
+  margin-right:13%;
+  margin-top:10px;
+
+}
+
+.header .logo a{
+  text-decoration: none;
+  display: inline-block;
+  color:#e5e5e5;
+  font-size:30px;
+  font-style: sans-serif;
+  font-weight:900;
+  padding:10px;
+  letter-spacing: 0.3em;
+  margin-left:13%;
+}
+
+.header ul li a{
+  text-decoration: none;
+  padding: 8px;
+  letter-spacing: 0.1em;
+  font-weight:500;
+  color:#e5e5e5;
+  font-family: sans-serif;
+  transition: 0.6s ease;
+
+}
+
+.header ul li a:hover{
+  background-color: #fff;
+  color:black;
+}
+
+.Title{
+  color:White;
+  font-size: 25px;
+  font-family: fantasy;
+  font-family: calibri;
+  padding-top: 70px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.Title h1{
+  border-bottom: 3px solid black;
+  padding-bottom: 180px;
+
+}
+
+
+
+.bodies{
+  color:white;
+  font-family: fantasy;
+}
+
+.data{
+  padding-left: 10px;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+
+.data ul li{
+  font-size: 15px;
+  letter-spacing: 0.03em;
+}
+.plutoadd{
+  float: right;
+  padding-right: 25%;
+
+}
+
+.plutoadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.plutoadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+
+.makemakeadd{
+  float: right;
+  padding-right: 37%;
+}
+
+.haumeaadd{
+  float: right;
+  padding-right: 34%;
+}
+
+.erisadd{
+  float: right;
+  padding-right: 33%;
+}
+
+.charonadd{
+  float: right;
+  padding-right: 22%;
+}
+.nixadd{
+  float: right;
+  padding-right: 31%;
+}
+.hydraadd{
+  float: right;
+  padding-right: 33%;
+}
+.kerberosadd{
+  float: right;
+  padding-right: 42%;
+}
+.styxadd{
+  float: right;
+  padding-right: 41%;
+}
+.hiakaadd{
+  float: right;
+  padding-right: 40%;
+}
+.namakaadd{
+  float: right;
+  padding-right:48%;
+}
+.dysnomiaadd{
+  float: right;
+  padding-right: 48%;
+}
+
+.charonadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.charonadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.dysnomiadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.dysnomiaadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.erisadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.erisadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.haumeaadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.haumeaadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.hiakaadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.hiakaadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.hydraadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.hydraadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.kerberosadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.kerberosadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.makemakeadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.makemakeadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.namakaadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.namakaadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.nixadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.nixadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.styxadd h2{
+  font-weight:400;
+  display: inline;
+}
+
+.styxadd h3{
+  font-weight: 100;
+  display: inline;
+}
+
+.footer{
+
+  align:bottom;
+  margin-top: 40px;
+  color:#e5e5e5;
+  font-family:fantasy;
+  line-height: 3em;
+
+
+}
+
+
+.footer .contacts{
+  float: left;
+  padding-left: 30px;
+}
+
+.footer .address{
+  float: right;
+  padding-right: 30px;
+  margin-right: 250px;
+}
+
+.footer .contacts h1{
+  font-size: 26px;
+  letter-spacing: 0.02em;
+  padding-bottom: 1px;
+  font-weight:400;
+
+}
+
+.footer .contacts h2{
+  padding-top: 6px;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  font-weight:100;
+
+}
+
+.footer .contacts h3{
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  font-weight:100;
+
+}
+
+.footer .address h1{
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  font-weight:100;
+
+}
+
+.buttons{
+  text-align: center;
+}
+
+.buttons a{
+  text-decoration: none;
+  font-size: 35px;
+  color:black;
+  font-family: serif;
+
+}
+
+.buttons a:hover{
+  color:green;
+  background: #e5e5e5;
+}
