@@ -3,235 +3,69 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="{% static "css/explore.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/explore.css' %}">
+    <title> Explore </title>
   </head>
   <body>
-     <header class="header">
-       <li class="logo"><a href="{% url "home_view" %}">TNS</a></li>
-       <ul>
-         <li><a href="{% url "home_view" %}">Home</a></li>
-         <li><a href="{% url "form_view" %}">Bookings</a></li>
-         <li><a href="{% url "explore_view" %}">Explore</a></li>
-         <li><a href="{% url "about_view" %}">About-Us</a></li>
-       </ul>
-     </header>
-     <div class="Title">
-       <h1> Popular Destinations </h1>
-     </div>
-     <div class="bodies">
-       <ul class="dwarf">
 
-         <div class="plutoadd"></br>
-           <h1>Special Features</h1></br>
-             <h2>Composition</h2>:<h3> Mantle of water ice, Frozen methane,</br> Nitrogen, Ammonia, CO covering rocky base</br></br></h3>
-             <h2>Recreation</h2>: <h3>Variety of landscapes, Blue sunrise and </br>sunsets, Heart-shaped structure, 2-3km tall water-ice mountains</br></h3>
-           </br><h2>Research</h2>:<h3> Chaotic motion, Complex Geology</h3>
-       </div>
 
-       <li><img src="{% static "images/pluto.jpeg" %}"></li>
-       <div class="data">
-         <h1>Pluto</h1>
-         <ul>
-           <li>Diameter: 1/6th of earth</li>
-           <li>Distance from sun: 39AU</li>
-           <li>Temperature: 33-55K</li>
-         </ul>
-       </div>
-       <hr>
+    <header class="header">
+      <li class="logo"><a href="{% url "home_view" %}">TNS</a></li>
+      <ul>
+        <li><a href="{% url "home_view" %}">Home</a></li>
+        <li><a href="{% url "form_view" %}">Bookings</a></li>
+        <li><a href="{% url "explore_view" %}">Explore</a></li>
+        <li><a href="{% url "about_view" %}">About-Us</a></li>
+      </ul>
+    </header>
+ <div class="spaceship">
+   <h1> We are the light that travel into space</h1>
+<h2>Come Join Us in this enchantic endeavour    </br> <button><a href="{% url "form_view" %}">Book Now</a></button>
+</h2>
+     <img src="/media/img/explore.jpg">
+   </div>
+<div class="Title">
+  <h1>Your Destinations</h1>
+</div>
+    <div class="data">
+    {% for features in features %}
+      <img src="{{ features.Image.url }}">
 
-          <div class="makemakeadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Composition</h2>: <h3>Frozen methane and ethane</br></br></h3>
-              <h2>Research</h2>:<h3>Not Known!! Great to research </h3>
-          </div>
-          <li><img src="{% static "images/makemake.jpeg" %}"</li>
-          <div class="data">
-            <h1>MakeMake</h1>
-            <ul>
-              <li>Diameter: 1/9th of earth</li>
-              <li>Distance from sun: 45.8AU</li>
-              <li>Temperature: About 40K</li>
-            </ul>
-          </div>
-<hr>
+      <div class="edata">
 
-           <div class="haumeaadd"></br>
-             <h1>Special Features</h1></br>
-               <h2>Composition</h2>: <h3>Coating of ice covering rocky mass</br></br></h3>
-               <h2>Recreation/Research</h2>: <h3>Great view of rings</h3>
-           </div>
-           <li><img src="{% static "images/haumea.jpeg" %}"</li>
-           <div class="data">
-             <h1>Haumea</h1>
-             <ul>
-               <li>Diameter: 1/14th of earth</li>
-               <li>Distance from sun: 43AU</li>
-             </ul>
-           </div>
-<hr>
-            <div class="erisadd"></br>
-              <h1>Special Features</h1></br>
-                <h2>Composition</h2>: <h3>Rocky Surface</br></br></h3>
-                <h2>Research</h2>: <h3>presence of Self-replenishing methane</h3>
-            </div>
-            <li><img src="{% static "images/eris.jpeg" %}"</li>
-            <div class="data">
-              <h1>Eris</h1>
-              <ul>
-                <li>Diameter: 1/5th of earth</li>
-                <li>Distance from sun: 68AU</li>
-                <li>Temperature: 30-56K</li>
-              </ul>
-            </div>
-<hr>
-       </ul></br>
-       <ul class="extra">
+         <h1>Composition</h1>: <h2>{{ features.Composition }}</h2></br>
+          <h1>Recreation</h1>: <h2>{{ features.Recreation }}</h2></br>
+          <h1>Research</h1>: <h2>{{ features.Research }}</h2></br>
 
-          <div class="charonadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Recreation</h2>: <h3>Flow like structure</br></br></h3>
-              <h2>Research</h2>: <h3>Presence of tholins(organic life molecules), Interior Study</h3>
-          </div>
-          <li><img src="{% static "images/charon.jpeg" %}"</li>
-          <div class="data">
-            <h1>Charon</h1>
-            <ul>
-              <li>Diameter: 1/21th of earth</li>
-              <li>Distance from sun: </li>
-              <li>Temperature: 53K</li>
-              <li>Density:1.702gm/cubiccentimeter</li>
-            </ul>
-          </div>
-<hr>
-          <div class="nixadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Recreation</h2>:<h3> Jelly Bean Shaped</br></br> </h3>
-              <h2>Research</h2>:<h3> Brightness fluctuations, presence of tholins </h3>
-          </div>
-          <li><img src="{% static "images/nix.jpeg" %}"</li>
-         <div class="data">
-           <h1>Nix</h1>
-           <ul>
-             <li>Diameter: 33.4km</li>
-             <li>Temperature: 33-55K</li>
-             <li>Density: 1.37gm/cubiccentimeter</li>
-           </ul>
-         </div>
-<hr>
-          <div class="hydraadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Composition</h2>:<h3> Water ice covering surface</br></br></h3>
-              <h2>Research</h2>:<h3> Large Craters and indentations on surface</h3>
-          </div>
-          <li><img src="{% static "images/hydra.jpeg" %}"</li>
-          <div class="data">
-            <h1>Hydra</h1>
-            <ul>
-              <li>Diameter: 33km</li>
-              <li>Temperature: 23K</li>
-              <li>Density: 2.13gm/cubiccentimeter</li>
-            </ul>
-          </div>
-<hr>
-          <div class="kerberosadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Composition</h2>: <h3>Water Ice</br></br></h3>
-              <h2>Recreation</h2>:<h3> Double Lobe Shaped</br></br></h3>
-              <h2>Research</h2>: <h3>Study on Chaotic Rotation</h3>
-          </div>
-          <li><img src="{% static "images/kerberos.jpeg" %}"</li>
-          <div class="data">
-            <h1>Kerberos</h1>
-            <ul>
-              <li>Diameter: 19km(longest)</li>
-              <li>Orbital Period: 32.16756 days</li>
-              <li>Rotation Period: 5.31 days</li>
-            </ul>
-          </div>
-<hr>
-          <div class="styxadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Composition</h2>: <h3>Water Ice</br></br></h3>
-              <h2>Research</h2>: <h3>Study of its shape and size</h3>
-          </div>
-          <li><img src="{% static "images/styx.jpg" %}"</li>
-          <div class="data">
-            <h1>Styx</h1>
-            <ul>
-              <li>Diameter: 5-7km</li>
-              <li>Orbital Period:20.161 days </li>
-              <li>Rotational Period: 20.2 days</li>
-            </ul>
-          </div>
-<hr>
-          <div class="hiakaadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Composition</h2>: <h3>Pure Crystalline Water Ice</h3>
+        </div>
+          <div class="mdata">
+            <h3>{{ features.Name }}</h3></br>
+            <h1>Diameter</h1>: <h2>{{ features.Diameter }}</h2></br>
+            <h1>Distance</h1>: <h2>{{ features.Distance }}</h2></br>
+            <h1>Temperature</h1>: <h2>{{ features.Temperature }}</br>
+              <h1>Density</h1>: <h2>{{ features.Density }}</br>
 
-          </div>
-          <li><img src="{% static "images/hiaka.jpeg" %}"</li>
-          <div class="data">
-            <h1>Hi'aka</h1>
-            <ul>
-              <li>Diameter: 310km</li>
-              <li>Temperature: 32K</li>
-            </ul>
-          </div>
+          </div></br>
+        <hr>
+      </br>
+    {% endfor %}
+  </div>
 
-<hr>
-          <div class="namakaadd"></br>
-            <h1>Special Features</h1></br>
-              <h2>Composition</h2>:<h3> Water Ice</h3>
 
-          </div>
-          <li><img src="{% static "images/namaka.jpeg" %}"</li>
-          <div class="data">
-            <h1>Namaka</h1>
-            <ul>
-              <li>Diameter: 170km</li>
-              <li>Temperature: 32K</li>
-              <li>Density: 1gm/cubiccentimeter</li>
-            </ul>
-          </div>
-<hr>
-           <div class="dysnomiaadd"></br>
-             <h1>Special Features</h1></br>
+  <div class="footer">
+    <div class ="contacts">
+      <h1> TNS HEADQUARTERS </h1>
+      <h2> Shankamul Road </h2>
+      <h3> New Baneshwor, Kathmandu </br>
+      Toll-free : 393-585-333-869</h3>
+    </div>
+    <div class="line">
 
-               <h3>Huge possibilty of Research</h3>
-           </div>
-           <li><img src="{% static "images/Dysnomia.jpeg" %}"</li>
-           <div class="data">
-             <h1>Dysnomia</h1>
-             <ul>
-               <li>Diameter: 1/40th of earth</li>
-               <li>Distance from sun: 96.3AU</li>
-               <li>Temperature: 30-56K</li>
-               <li>Density: 2.52gm/cubiccentimeter</li>
-             </ul>
-           </div>
-         </br></br>
-         <div class="buttons">
-         <button><a href="{% url "form_view" %}">Book Now</a></button>
-       </div>
-     </br>
-           <hr>
-       </ul>
-     </div>
-
-     <div class="footer">
-       <div class ="contacts">
-         <h1> TNS HEADQUARTERS </h1>
-         <h2> Shankamul Road </h2>
-         <h3> New Baneshwor, Kathmandu </br>
-         Toll-free : 393-585-333-869</h3>
-       </div>
-       <div class="line">
-
-       </div>
-       <div class="address">
-         <h1>Enquiry Address: enquiry@tns.com</h1>
-       </div>
-     </div>
+    </div>
+    <div class="address">
+      <h1>Enquiry Address: enquiry@tns.com</h1>
+    </div>
+  </div>
 
   </body>
+</html>

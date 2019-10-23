@@ -62,217 +62,70 @@ html, .Body{
   color:black;
 }
 
-.Title{
-  color:White;
-  font-size: 25px;
-  font-family: fantasy;
-  font-family: calibri;
-  padding-top: 70px;
-  padding-left: 30%;
-  padding-right: 30%;
-}
 
-.Title h1{
-  border-bottom: 3px solid black;
-  padding-bottom: 180px;
-
-}
-
-
-
-.bodies{
-  color:white;
-  font-family: fantasy;
-}
 
 .data{
-  padding-left: 10px;
-  text-decoration: none;
-  padding-bottom: 10px;
+  color:#e5e5e5;
+  padding-top: 20px;
+  font-family: fantasy;
+  letter-spacing: 0.02em;
+}
+
+.data img{
+  height: 200px;
+  width: 16%;
+  float: left;
+}
+
+.data .edata{
+  margin-left: 25%;
+  padding-bottom: 120px;
+  line-height: 30px;
+
+}
+
+.data .mdata{
+  padding-left: 30px;
+  line-height: 30px;
+  margin-right: 77%;
 }
 
 
-.data ul li{
-  font-size: 15px;
-  letter-spacing: 0.03em;
-}
-.plutoadd{
-  float: right;
-  padding-right: 25%;
-
-}
-
-.plutoadd h2{
-  font-weight:400;
+.data .mdata h1{
+  font-weight: 400;
   display: inline;
+  font-size: 1.2em;
 }
 
-.plutoadd h3{
+.data .mdata h2{
+  display: inline;
+  font-weight:normal;
+  font-size: 1.2em;
+
+}
+
+.data .mdata h3{
+  font-weight: 600;
+  display: inline;
+  font-size: 1.7em;
+  border-bottom: 2px solid maroon;
+}
+
+.data .edata h1{
+  display: inline;
+  font-size:1.6em;
+  font-weight: 400;
+
+
+}
+
+.data .edata h2{
+  display: inline;
+  font-size: 1.5em;
   font-weight: 100;
-  display: inline;
-}
-
-
-.makemakeadd{
-  float: right;
-  padding-right: 37%;
-}
-
-.haumeaadd{
-  float: right;
-  padding-right: 34%;
-}
-
-.erisadd{
-  float: right;
-  padding-right: 33%;
-}
-
-.charonadd{
-  float: right;
-  padding-right: 22%;
-}
-.nixadd{
-  float: right;
-  padding-right: 31%;
-}
-.hydraadd{
-  float: right;
-  padding-right: 33%;
-}
-.kerberosadd{
-  float: right;
-  padding-right: 42%;
-}
-.styxadd{
-  float: right;
-  padding-right: 41%;
-}
-.hiakaadd{
-  float: right;
-  padding-right: 40%;
-}
-.namakaadd{
-  float: right;
-  padding-right:48%;
-}
-.dysnomiaadd{
-  float: right;
-  padding-right: 48%;
-}
-
-.charonadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.charonadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.dysnomiadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.dysnomiaadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.erisadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.erisadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.haumeaadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.haumeaadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.hiakaadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.hiakaadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.hydraadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.hydraadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.kerberosadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.kerberosadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.makemakeadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.makemakeadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.namakaadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.namakaadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.nixadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.nixadd h3{
-  font-weight: 100;
-  display: inline;
-}
-
-.styxadd h2{
-  font-weight:400;
-  display: inline;
-}
-
-.styxadd h3{
-  font-weight: 100;
-  display: inline;
 }
 
 .footer{
-
   align:bottom;
   margin-top: 40px;
   color:#e5e5e5;
@@ -324,19 +177,79 @@ html, .Body{
 
 }
 
-.buttons{
+
+.Title {
   text-align: center;
+
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-family:sans-serif;
+  color: #e5e5e5;
+  font-size :25px;
+  border-bottom: 3px solid yellow;
+  margin-left: 25%;
+  margin-right:25%;
+
+
 }
 
-.buttons a{
-  text-decoration: none;
+.Title h1{
+}
+
+
+.spaceship{
+  line-height: 20px;
+}
+.spaceship img{
+  width: 100%;
+  height: 120vh;
+  opacity: 0.5;
+}
+
+.spaceship h1{
+  position: absolute;
+  color:#67cfab;
+  z-index:1;
+  padding-left: 22%;
+  padding-top:230px;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+
+.spaceship h2{
+  position: absolute;
+  color:#e5e5e5;
+  z-index:1;
+  padding-left: 28%;
+  padding-top:280px;
+  font-family: sans-serif;
+}
+
+
+.spaceship h2 button{
+  margin-top: 20px;
+  margin-left: 190px;
   font-size: 35px;
-  color:black;
-  font-family: serif;
 
 }
 
-.buttons a:hover{
-  color:green;
-  background: #e5e5e5;
+.spaceship h2 button a{
+  color: black;
+  text-decoration: none;
+  font-family:sans-serif;
+  font-weight: bold;
+  background: #e0e0e0;
+}
+
+.spaceship h2 button:hover{
+  color:brown;
+  background: #e0e0e0;
+  border: none;
+}
+
+.spaceship h2 button a:hover{
+  color:brown;
+  background: #e0e0e0;
+
 }

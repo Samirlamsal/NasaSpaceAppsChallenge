@@ -14,3 +14,17 @@ class entry(models.Model):
 
     def __str__(self):
         return self.Name
+
+class data(models.Model):
+    Name = models.CharField(max_length=50)
+    Composition = models.TextField()
+    Recreation = models.TextField()
+    Research = models.TextField()
+    Image = models.ImageField(upload_to='img/')
+    Diameter = models.CharField(max_length=50)
+    Distance = models.CharField(max_length=50)
+    Temperature = models.CharField(max_length=50)
+    Density = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.Name

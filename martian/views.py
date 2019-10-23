@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from .models import entry
 from .forms import detail
+from .models import data
 
 
 def form_view(request):
@@ -20,4 +21,5 @@ def about_view(request):
     return render(request, 'About.html', {})
 
 def explore_view(request):
-    return render(request, 'Explore.html', {})
+    features = data.objects.all()
+    return render(request, 'Explore.html', {'features':features})

@@ -4,13 +4,14 @@
 }
 
 
-body{
-  background-image: url(/static/images/chulo.jpg);
-  color:#a8d5b7;
 
 
+img{
+  height:97vh;
+  width:100%;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
-
 
 
 
@@ -71,15 +72,21 @@ body{
 }
 
 .Title{
+  z-index:1;
+  position: absolute;
   text-align: center;
   font-family: fantasy;
-  padding-top: 40px;
+  padding-top: 120px;
+  padding-left: 12%;
   line-height: 45px;
 
 
 }
 
 .Title h1{
+  color:#a4f0d6;
+
+
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 0.02em;
@@ -87,14 +94,20 @@ body{
 }
 
 .Title h2{
+
+
   font-size: 25px;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 0.02em;
   word-spacing: 0.09em;
-  padding-top: 40px;
+  padding-top: 50px;
+  color:green;
+
 }
 
 .Title button{
+
+
   margin-top: 20px;
   font-size: 35px;
   border-bottom none;
